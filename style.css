@@ -1,0 +1,203 @@
+html{
+    background-color: aliceblue;
+    margin: 0;
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/**Style Headers*/
+.div-title{
+    margin: 0 auto;
+    width: 320px;
+    margin-top: 1.6em;
+}
+.div-title > h1,
+.div-title > p {
+    text-align: center;
+}
+
+.div-title > p{
+    margin-top: 1.5rem;
+    color: rgba(11, 10, 10, 0.49);
+}
+.div-title > h1{
+    font-weight: 900;
+    line-height: 1.5em;
+}
+/**Choose Styles*/
+.choose-button{
+    background-color: rgb(255, 255, 255);
+    padding: 0.6em;
+    width: max-content;
+    border-radius: 1.2em;
+    margin: 0 auto;
+    margin-top: 4.6em;
+}
+.choose-button > button{
+    background-color: rgb(238, 242, 245);
+    width: 10em;
+    height: 3.2em;
+    border-radius: 1.2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.choose-button > button:nth-child(1){
+    color: rgba(11, 10, 10, 0.49);
+    background-color: rgb(242, 242, 247);
+}
+.choose-button > button:nth-child(2){
+    color: white;
+    background-color: rgb(55, 70, 240);
+}
+
+/**Choose Pay Styles*/
+.choose-pay{
+    width: 74%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+.pay{
+    width: 24%;
+    min-width: 320px;
+    background-color: white;
+    height: 38.5em;
+    border-radius: 30px;
+}
+/**Pay pro*/
+.pay-pro{
+    transform: translateY(-2em);
+    width: 25%;
+    min-width: 390px;
+    height: 43.8em;
+    background-color: rgb(55, 70, 240);
+}
+.pay-pro > .pay-order,
+.pay-pro > .pay-order > * {
+    background-color: rgb(55, 70, 240);
+    color: white;
+}
+.pro-price{
+    color: white !important;
+}
+
+.pay-pro > .pay-info > .div-signup > .pay-submit {
+    background-color: rgb(55, 70, 240);
+    color: white;
+}
+.pay-pro > .pay-info{
+    background-color: white;
+}
+.pay-order > #pro> p { 
+    margin-top: 2em;
+    background-color: rgba(138, 137, 148, 0.185);
+    text-align: center;
+    padding: 0.8em 0.3em;
+    color: white;
+    border-radius: 30px;
+}
+
+/**/
+.pay-order{
+    margin: 0 auto;
+    margin-top: 2em;
+    width: max-content;
+    background-color: white;
+    position: relative;
+}
+.pay-order > * {
+    background-color: white;
+}
+.pay-order > h2{
+    text-align: center;
+}
+.pay-order > p{
+    text-align: center;
+    color: rgba(11, 10, 10, 0.49);
+}
+#signal-1{    
+    position: absolute;
+    left: 60px;
+    top: 100px;
+    color: rgba(11, 10, 10, 0.49);
+}
+#signal-2{    
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    color: rgba(11, 10, 10, 0.49);
+}
+#price{
+    font-size: 4em;
+    color: black;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/**Pay Info*/
+.pay-info {
+    width: 90%;
+    height: 22em;
+    min-width: 290px;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 0.5em;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+.pay-info > ul > *{
+    list-style: none;
+    font-weight: bold;
+    margin: 1.5em;
+}
+.icon-check{
+    border-radius: 50%;
+    transform: translateY(1.8px);
+}
+.info {
+    margin-left: 5px;
+}
+.div-signup{
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+.pay-submit{
+    text-align: center;
+    background-color: white;
+    color: rgb(62, 62, 201);
+    border-radius: 1em;
+    border: none;
+    height: 2em;
+    min-width: 240px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1em 4.2em;
+}
+.pay-submit > span{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 68.75em) {
+    .choose-pay{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pay{
+        margin-bottom: 5em;
+    }
+}
